@@ -1,0 +1,15 @@
+<%- include("partials/header") -%>
+
+<h1>home</h1>
+    <%= homePageContent %> 
+    <% contentDays.forEach(function(item){%>
+        <h1><%=  item[0] %></h1>
+         <p><%= item[1].slice(0,3) + "..." %> <a href=<%= "/posts/" + item[0] %> >More read</a></p>
+        
+                
+        <%})%>
+
+ 
+
+
+<%- include("partials/footer") -%>
